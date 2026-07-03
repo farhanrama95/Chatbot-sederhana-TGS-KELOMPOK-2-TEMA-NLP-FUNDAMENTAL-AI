@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Perpustakaan</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logonew.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <img src="{{ url_for('static', filename='img/logonew.png') }}" alt="Logo PustakaBot" class="bot-logo">
+            
+            <div class="bot-status-info">
+                <span class="bot-name">PuscaBot</span>
+                <span class="bot-status">Online</span>
+            </div>
+        </div>
+
+        <div class="chat-messages" id="chat-messages"></div>
+
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Ketik pesan atau pilih menu..." autocomplete="off" />
+            <button id="send-btn">➤</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

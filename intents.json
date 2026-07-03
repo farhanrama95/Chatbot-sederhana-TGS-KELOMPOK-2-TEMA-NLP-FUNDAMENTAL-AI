@@ -1,0 +1,54 @@
+{
+  "intents": [
+    {
+        "tag": "muslim",
+        "patterns":["assalamualaikum", "assalamualaikum wr wb", "assalamualaikum warahmatullahi wabbarokkatuh"],
+        "responses":["waalaikumsalam wr wb","waalaikumsalam, manusia!.Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?"]
+    },
+    {
+      "tag": "sapaan",
+      "patterns": ["halo", "hai", "hi", "selamat pagi", "selamat siang", "selamat sore", "permisi", "assalamualaikum"],
+      "responses": ["Halo! Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?", "Hai! Ada yang ingin ditanyakan seputar perpustakaan?"]
+    },
+    {
+      "tag": "jam_buka",
+      "patterns": ["jam berapa perpus buka", "kapan perpustakaan buka", "jadwal buka perpustakaan", "jam operasional perpus", "perpus buka jam berapa", "kapan tutup", "jam tutup perpustakaan"],
+      "responses": ["Perpustakaan buka setiap Senin-Jumat pukul 08.00-16.00 WIB, dan Sabtu pukul 08.00-12.00 WIB."]
+    },
+    {
+      "tag": "cara_pinjam",
+      "patterns": ["cara pinjam buku", "gimana cara meminjam buku", "syarat pinjam buku", "bagaimana meminjam buku", "prosedur peminjaman buku"],
+      "responses": ["Untuk meminjam buku: 1) Tunjukkan kartu anggota ke petugas, 2) Pilih maksimal 3 buku, 3) Petugas akan mencatat data peminjaman."]
+    },
+    {
+      "tag": "batas_pinjam",
+      "patterns": ["berapa lama boleh pinjam buku", "batas waktu peminjaman", "kapan harus dikembalikan", "lama peminjaman buku"],
+      "responses": ["Batas waktu peminjaman buku adalah 7 hari dan bisa diperpanjang 1 kali jika tidak ada yang memesan buku tersebut."]
+    },
+    {
+      "tag": "denda",
+      "patterns": ["kena denda tidak", "berapa denda telat", "denda keterlambatan", "kalau telat kembalikan buku kena apa"],
+      "responses": ["Denda keterlambatan adalah Rp1.000 per hari per buku."]
+    },
+    {
+      "tag": "daftar_anggota",
+      "patterns": ["cara daftar jadi anggota", "syarat jadi anggota perpus", "bagaimana membuat kartu anggota", "daftar member perpustakaan"],
+      "responses": ["Untuk mendaftar sebagai anggota, bawa KTP/Kartu Pelajar dan pas foto 3x4, lalu isi formulir pendaftaran di meja petugas."]
+    },
+    {
+      "tag": "cari_buku",
+      "patterns": ["cara cari buku", "gimana cara mencari buku di perpus", "dimana bisa cari katalog buku", "cara menemukan buku"],
+      "responses": ["Kamu bisa mencari buku melalui katalog online di komputer yang tersedia, atau bertanya langsung ke petugas perpustakaan."]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": ["terima kasih", "makasih", "thanks", "oke terima kasih"],
+      "responses": ["Sama-sama! Senang bisa membantu 😊", "Dengan senang hati! Jangan ragu bertanya lagi ya."]
+    },
+    {
+      "tag": "pamit",
+      "patterns": ["sampai jumpa", "bye", "dadah", "keluar", "selesai"],
+      "responses": ["Sampai jumpa! Semoga harimu menyenangkan 👋"]
+    }
+  ]
+}

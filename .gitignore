@@ -1,0 +1,19 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# VSCode settings
+.vscode/
+
+# Model hasil training (opsional, karena bisa di-generate ulang)
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
