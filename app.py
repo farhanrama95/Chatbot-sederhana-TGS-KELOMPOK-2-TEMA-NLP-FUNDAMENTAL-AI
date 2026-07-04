@@ -6,8 +6,7 @@ from flask import Flask, request, jsonify, render_template
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.model_selection import cross_val_score
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 # ============================================================
@@ -43,7 +42,7 @@ with open(INTENTS_PATH, "r", encoding="utf-8") as f:
     intents_data = json.load(f)
 
 # ============================================================
-# 4. TRAINING MODEL + EVALUASI AKURASI
+# 4. TRAINING MODEL + EVALUASI AKURASI (CROSS-VALIDATION)
 # ============================================================
 def train_model():
     texts, labels = [], []
@@ -58,21 +57,25 @@ def train_model():
             texts.append(clean_text(pattern))
             labels.append(tag)
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        texts, labels, test_size=0.2, random_state=42
-    )
-
     pipeline = Pipeline([
-        ("tfidf", TfidfVectorizer(ngram_range=(1, 2))),
+        ("tfidf", TfidfVectorizer(ngram_range=(1, 2), token_pattern=r"(?u)\b\w+\b")),
         ("clf", LogisticRegression(max_iter=1000, C=10)),
     ])
-    pipeline.fit(X_train, y_train)
 
-    y_pred = pipeline.predict(X_test)
-    akurasi = accuracy_score(y_test, y_pred)
-    print(f"📊 Akurasi model (data uji): {akurasi * 100:.2f}%")
+    # Evaluasi pakai cross-validation (lebih stabil untuk dataset kecil
+    # dibanding split sekali dengan train_test_split).
+    # Jumlah fold otomatis menyesuaikan jumlah data terkecil per kelas,
+    # supaya tidak error kalau ada tag dengan pattern sedikit.
+    try:
+        min_per_class = min(labels.count(l) for l in set(labels))
+        n_folds = max(2, min(5, min_per_class))
+        scores = cross_val_score(pipeline, texts, labels, cv=n_folds)
+        print(f"📊 Akurasi rata-rata ({n_folds}-fold cross-validation): {scores.mean() * 100:.2f}%")
+        print(f"   Rincian tiap fold: {[f'{s*100:.1f}%' for s in scores]}")
+    except Exception as e:
+        print(f"⚠️ Cross-validation dilewati (data terlalu sedikit): {e}")
 
-    # Latih ulang dengan seluruh data untuk model final
+    # Training final memakai SELURUH data supaya model produksi maksimal
     pipeline.fit(texts, labels)
 
     return pipeline, responses, options_map
