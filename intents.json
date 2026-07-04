@@ -53,7 +53,22 @@
     {
       "tag": "Daftar_buku",
       "patterns": ["ada buku apa saja?", "info buku?", "informasi buku?", "daftar buku?", "tersedia buku apa saja?", "punya buku apa saja?", "ada buku apa?", "list buku"],
-      "responses": ["Daftar buku📚 yg kami miliki yaitu: \n1.Buku IPA \n2.Buku Bahasa \n3.Buku Sejarah \n4.Buku Matematika \n5.Buku Fisika \n6.Buku Novel \n7.Buku Cerita \n8.Buku Agama \n9.Buku Astronomi \n10.Buku Teknologi/Ilmu Terapan \n11.Buku Ilmu Sosial \n12.Buku Filsafat dan Psikologi \n13.Buku Seni dan Rekreasi \nInilah daftar buku yang kami sediakan yang bisa anda pilih😁, atau masih bingung mau baca yang mana? coba sebut salah satu jenis dari atas☝️"]
+      "responses": ["Daftar buku📚 yg kami miliki, silakan pilih salah satu ya😁:"],
+      "options": [
+        {"label": "1. Buku IPA", "value": "buku ipa"},
+        {"label": "2. Buku Bahasa", "value": "buku bahasa"},
+        {"label": "3. Buku Sejarah", "value": "buku sejarah"},
+        {"label": "4. Buku Matematika", "value": "buku matematika"},
+        {"label": "5. Buku Fisika", "value": "buku fisika"},
+        {"label": "6. Buku Novel", "value": "buku novel"},
+        {"label": "7. Buku Cerita", "value": "buku cerita"},
+        {"label": "8. Buku Agama", "value": "buku agama"},
+        {"label": "9. Buku Astronomi", "value": "buku astronomi"},
+        {"label": "10. Buku Teknologi", "value": "buku teknologi"},
+        {"label": "11. Buku Ilmu Sosial", "value": "buku ilmu sosial"},
+        {"label": "12. Filsafat & Psikologi", "value": "buku filsafat psikologi"},
+        {"label": "13. Seni & Rekreasi", "value": "buku seni rekreasi"}
+      ]
     },
     {
       "tag": "ipa",

@@ -5,3 +5,8 @@ hao
 hhalo
 
 terimakasih
+list
+1
+2
+no 4
+1
