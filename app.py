@@ -26,7 +26,7 @@ FALLBACK_RESPONSE = (
 )
 
 # ============================================================
-# 2. SETUP STEMMER (Bahasa Indonesia)
+#  SETUP STEMMER (Bahasa Indonesia)
 # ============================================================
 stemmer = StemmerFactory().create_stemmer()
 
@@ -37,13 +37,13 @@ def clean_text(text: str) -> str:
     return text
 
 # ============================================================
-# 3. LOAD DATASET INTENT
+#  LOAD DATASET INTENT
 # ============================================================
 with open(INTENTS_PATH, "r", encoding="utf-8") as f:
     intents_data = json.load(f)
 
 # ============================================================
-# 4. TRAINING MODEL + EVALUASI AKURASI
+#  TRAINING MODEL + EVALUASI AKURASI
 # ============================================================
 def train_model():
     texts, labels = [], []
