@@ -52,7 +52,7 @@
     },
     {
       "tag": "Daftar_buku",
-      "patterns": ["ada buku apa saja?", "info buku?", "informasi buku?", "daftar buku?", "tersedia buku apa saja?", "punya buku apa saja?", "ada buku apa?", "list buku"],
+      "patterns": ["ada buku apa saja?", "info buku?", "informasi buku?", "daftar buku?", "tersedia buku apa saja?", "punya buku apa saja?", "ada buku apa?", "list buku" ,"list"],
       "responses": ["Daftar buku📚 yg kami miliki, silakan pilih salah satu ya😁:"],
       "options": [
         {"label": "1. Buku IPA", "value": "buku ipa"},
