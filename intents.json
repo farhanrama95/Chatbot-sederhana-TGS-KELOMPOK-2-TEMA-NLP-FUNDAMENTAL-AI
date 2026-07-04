@@ -6,7 +6,7 @@
                     "assalamualaikum wr wb", 
                     "assalamualaikum warahmatullahi wabbarokkatuh"],
         "responses":["waalaikumsalam wr wb",
-                    "waalaikumsalam warahmatullahi wabbarokkatuh, manusia!.Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?"]
+                    "waalaikumsalam warahmatullahi wabbarokkatuh, manusia!.Selamat datang di PuskaBot 📚. Ada yang bisa saya bantu?"]
     },
     {
       "tag": "sapaan",
@@ -17,7 +17,7 @@
                     "selamat siang",
                     "selamat sore",
                     "permisi"],
-      "responses": ["Halo! Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?", "Hai! Ada yang ingin ditanyakan seputar perpustakaan?"]
+      "responses": ["Halo! Selamat datang di PuskaBot 📚. Ada yang bisa saya bantu?", "Hai! Ada yang ingin ditanyakan seputar perpustakaan?"]
     },
     {
       "tag": "jam_buka",
@@ -51,7 +51,19 @@
     },
     {
       "tag": "terima_kasih",
-      "patterns": ["terima kasih", "makasih", "thanks", "oke terima kasih"],
+      "patterns": ["terima kasih",
+                    "makasih",
+                    "thanks",
+                    "oke terima kasih",
+                    "tengkyu",
+                    "tq",
+                    "thx",
+                    "tengs",
+                    "maaci",
+                    "trims",
+                    "terimakasih",
+                    "trimakasih",
+                    "makaci"],
       "responses": ["Sama-sama! Senang bisa membantu 😊", "Dengan senang hati! Jangan ragu bertanya lagi ya."]
     },
     {
