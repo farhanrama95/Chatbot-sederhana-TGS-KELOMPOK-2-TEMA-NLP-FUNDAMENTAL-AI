@@ -2,6 +2,8 @@
 
 Project ini berbassis python scikit-learn dimana Chatbot akan merespon pengguna terkait topik perpustakaan ini
 
+![Alt text](static/img/Screenshot%202026-07-04%20232104.png)
+
 ## Cara Menjalankan Project
 
 1. Extract file zip
