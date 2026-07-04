@@ -127,7 +127,7 @@ body {
 
 .chat-input-area {
     display: flex;
-    padding: 14px;
+    padding: 0px 6cm 0px 6cm;
     margin: 1rem ;
     align-items: center;
 }
@@ -168,5 +168,9 @@ body {
 @media (max-width:900px){
     .chat-messages {
         padding: 30px 30px 30px 30px;
+    }
+
+    .chat-input-area {
+        padding: 14px;
     }
 }
