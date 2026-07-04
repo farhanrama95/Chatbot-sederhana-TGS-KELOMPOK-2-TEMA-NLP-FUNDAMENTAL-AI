@@ -20,5 +20,5 @@ Project ini berbassis python scikit-learn dimana Chatbot akan merespon pengguna 
 7. Buka browser ke: http://127.0.0.1:5000
 
 
-## JIKA ADA PENAMBAHAN PATTERN PADA JSON
+## JIKA ADA PENAMBAHAN INTENTS PADA JSON
  Restart ulang server, hapus terminal dan ketik ulang "python app.py" pada terminal yg baru (PASTIKAN VENV AKTIF!! VENV AKTIF AKAN TERLIHAT PADA TERMINAL DGN WARNA TEXT HIJAU JIKA TIDAK MAKA AKTIFKAN)
