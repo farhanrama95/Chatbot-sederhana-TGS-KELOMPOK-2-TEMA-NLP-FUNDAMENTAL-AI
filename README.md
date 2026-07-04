@@ -14,7 +14,7 @@ Project ini berbassis python scikit-learn dimana Chatbot akan merespon pengguna 
 5. Install semua library yang dibutuhkan (terminal):
    pip install -r requirements.txt
 
-   ## 5 langkah diatas hanya dijalankan sekali guna install venv(library package) untuk project ini, setelah itu lakukan hanya 2 langkah dibawah untuk menjalankan app 
+## 5 langkah diatas hanya dijalankan sekali guna install venv(library package) untuk project ini, setelah itu lakukan hanya 2 langkah dibawah untuk menjalankan app 
 6. Jalankan aplikasi(terminal):
    python app.py
 7. Buka browser ke: http://127.0.0.1:5000
