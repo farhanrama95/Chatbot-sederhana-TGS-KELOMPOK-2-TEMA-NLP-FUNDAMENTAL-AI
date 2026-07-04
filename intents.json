@@ -134,6 +134,11 @@
       "tag": "seni_rekreasi",
       "patterns": ["seni", "rekreasi", "buku seni", "buku rekreasi", "olahraga", "fotografi", "seni rupa", "no 13", "13", "tiga belas", "ketigabelas", "thirteenth"],
       "responses": ["Buku Seni dan Rekreasi membahas berbagai bentuk kesenian, hobi, dan kegiatan rekreasi, mulai dari seni rupa, fotografi, hingga olahraga. \nKategori ini cocok untuk kamu yang ingin menyalurkan hobi atau mencari inspirasi kreatif. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut ketigabelas, dengan label 'Seni dan Rekreasi' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag":"about",
+      "patterns":["tentang","about","ttg","abt","siapa kamu","kamu ini apa?","ini siapa","apa ini"],
+      "responses":["hai!! saya PuscaBot🤖📚 \n\nSaya adalah sistem Kecerdasan buatan untuk perpustakaan cahaya. tugas saya adalah sebagai asisten serta petunjuk bagi pengunjung yang ingin bertanya seputar perpustakaan. \n\nsaya adalah hasil nyata tugas project fundamental AI kelompok 2 bertemakan NLP \n\nberikut list mahasiswa yang berkontribusi untuk project ini:\n1. Nur Saputra Gustian (25.230.0125) \n2. Intan Nur Naisyilla (25.230.0127) \n3. Dwi Mei Sella (25.230.0152) \n4. Mohamad Farhan Ramadhani (25.230.0011) \n5. Dyah Aulia Pratiwi (25.230.0137) \n6. Akhmad Baihaqi (25.230.0156) \n7. M Ivan Dayu Estiawan (25.230.0005) \n8. Putra Aditya Ramadhani  (25.230.0118) \n\nsincerely,PuscaBot🤖"]
     }
   ]
 }
