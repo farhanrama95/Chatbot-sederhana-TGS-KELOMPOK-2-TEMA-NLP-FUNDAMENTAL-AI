@@ -6,13 +6,32 @@ function appendMessage(text, sender) {
   const messageEl = document.createElement("div");
   messageEl.classList.add("message", `${sender}-message`);
   messageEl.textContent = text;
-
   chatMessages.appendChild(messageEl);
   chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
-async function sendMessage() {
-  const message = userInput.value.trim();
+function appendOptions(options) {
+  if (!options || options.length === 0) return;
+
+  const container = document.createElement("div");
+  container.classList.add("options-container");
+
+  options.forEach((opt) => {
+    const btn = document.createElement("button");
+    btn.classList.add("option-btn");
+    btn.textContent = opt.label;
+    btn.addEventListener("click", () => {
+      sendMessage(opt.value);
+    });
+    container.appendChild(btn);
+  });
+
+  chatMessages.appendChild(container);
+  chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+async function sendMessage(customMessage) {
+  const message = (customMessage ?? userInput.value).trim();
   if (!message) return;
 
   appendMessage(message, "user");
@@ -26,12 +45,13 @@ async function sendMessage() {
     });
     const data = await response.json();
     appendMessage(data.reply || "Terjadi kesalahan pada server.", "bot");
+    appendOptions(data.options);
   } catch (error) {
     appendMessage("Tidak dapat terhubung ke server.", "bot");
   }
 }
 
-sendBtn.addEventListener("click", sendMessage);
+sendBtn.addEventListener("click", () => sendMessage());
 userInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") sendMessage();
 });

@@ -1,22 +1,13 @@
 {
   "intents": [
     {
-        "tag": "muslim",
-        "patterns":["assalamualaikum", 
-                    "assalamualaikum wr wb", 
-                    "assalamualaikum warahmatullahi wabbarokkatuh"],
-        "responses":["waalaikumsalam wr wb",
-                    "waalaikumsalam warahmatullahi wabbarokkatuh, manusia!.Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?"]
+      "tag": "muslim",
+      "patterns": ["assalamualaikum", "assalamualaikum wr wb", "assalamualaikum warahmatullahi wabbarokkatuh"],
+      "responses": ["waalaikumsalam wr wb", "waalaikumsalam warahmatullahi wabbarokkatuh, manusia!.Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?"]
     },
     {
       "tag": "sapaan",
-      "patterns": ["halo", 
-                    "hai", 
-                    "hi", 
-                    "selamat pagi",
-                    "selamat siang",
-                    "selamat sore",
-                    "permisi"],
+      "patterns": ["halo", "hai", "hi", "selamat pagi", "selamat siang", "selamat sore", "permisi"],
       "responses": ["Halo! Selamat datang di PuscaBot 📚. Ada yang bisa saya bantu?", "Hai! Ada yang ingin ditanyakan seputar perpustakaan?"]
     },
     {
@@ -51,61 +42,83 @@
     },
     {
       "tag": "terima_kasih",
-      "patterns": ["terima kasih",
-                    "makasih",
-                    "thanks",
-                    "oke terima kasih",
-                    "tengkyu",
-                    "tq",
-                    "thx",
-                    "tengs",
-                    "maaci",
-                    "trims",
-                    "terimakasih",
-                    "trimakasih",
-                    "makaci"],
+      "patterns": ["terima kasih", "makasih", "thanks", "oke terima kasih", "tengkyu", "tq", "thx", "tengs", "maaci", "trims", "terimakasih", "trimakasih", "makaci"],
       "responses": ["Sama-sama! Senang bisa membantu 😊", "Dengan senang hati! Jangan ragu bertanya lagi ya."]
     },
     {
       "tag": "pamit",
-      "patterns": ["sampai jumpa",
-                    "bye",
-                    "dadah",
-                    "keluar",
-                    "selesai"],
+      "patterns": ["sampai jumpa", "bye", "dadah", "keluar", "selesai"],
       "responses": ["Sampai jumpa! Semoga harimu menyenangkan 👋"]
     },
     {
-      "tag":"Daftar_buku",
-      "patterns":["ada buku apa saja?",
-                  "info buku?",
-                  "informasi buku?",
-                  "daftar buku?",
-                  "tersedia buku apa saja?",
-                  "punya buku apa saja?",
-                  "ada buku apa?",
-                  "list buku"],
-      "responses":["Daftar buku📚 yg kami miliki yaitu: \n1.Buku IPA \n2.Buku bahasa \n3.Buku Sejarah \n4.Buku Matematika \n5.Buku Fisika \n6.Buku novel \n7.Buku cerita \n8.Buku Agama \n9.Buku Astronomi \n10.Buku bahasa \n11.Buku Teknologi/ilmu terapan \n12.Buku Ilmu sosial \n13.Buku Filsafat dan Psikologi \n14.Buku Seni dan Rekreasi \nInilah daftar buku yang kami sediakan yang bisa anda pilih😁, atau masih bingung mau baca yang mana? coba sebut salah satu jenis dari atas☝️"]
+      "tag": "Daftar_buku",
+      "patterns": ["ada buku apa saja?", "info buku?", "informasi buku?", "daftar buku?", "tersedia buku apa saja?", "punya buku apa saja?", "ada buku apa?", "list buku"],
+      "responses": ["Daftar buku📚 yg kami miliki yaitu: \n1.Buku IPA \n2.Buku Bahasa \n3.Buku Sejarah \n4.Buku Matematika \n5.Buku Fisika \n6.Buku Novel \n7.Buku Cerita \n8.Buku Agama \n9.Buku Astronomi \n10.Buku Teknologi/Ilmu Terapan \n11.Buku Ilmu Sosial \n12.Buku Filsafat dan Psikologi \n13.Buku Seni dan Rekreasi \nInilah daftar buku yang kami sediakan yang bisa anda pilih😁, atau masih bingung mau baca yang mana? coba sebut salah satu jenis dari atas☝️"]
     },
     {
-      "tag":"ipa",
-      "patterns":["Ipa",
-                  "buku ipa",
-                  "alam",
-                  "ilmu pengetahuan alam",
-                  "no 1",
-                  "hewan",
-                  "hewan laut",
-                  "anatomi",
-                  "jenis tumbuhan",
-                  "tumbuhan",
-                  "serangga",
-                  "ilmu alam",
-                  "1",
-                  "satu",
-                  "pertama",
-                  "first"],
-      "responses":["Ilmu Pengetahuan Alam (IPA) adalah kajian sistematis mengenai fenomena alam dan segala isinya, yang mencakup seluruh makhluk hidup dan benda mati. IPA bertujuan untuk memahami proses, hukum, dan interaksi di alam semesta melalui observasi empiris, eksperimen, dan metode ilmiah yang terstruktur. \nbuku dengan jenis ini memiliki kategori yang beragam seperti buku tentang aneka biota laut, pembahasan mengenai tumbuhan, dan lain lain. \nbuku dengan jenis ini bisa kamu pilih di rak buku dengan no urut pertama dengan nama di samping rak bertuliskan 'Ilmu pengetahuan alam' dan bisa kamu baca langsung atau dibawa pulang dengan meminjamnya lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+      "tag": "ipa",
+      "patterns": ["Ipa", "buku ipa", "alam", "ilmu pengetahuan alam", "no 1", "hewan", "hewan laut", "anatomi", "jenis tumbuhan", "tumbuhan", "serangga", "ilmu alam", "1", "satu", "pertama", "first"],
+      "responses": ["Ilmu Pengetahuan Alam (IPA) adalah kajian sistematis mengenai fenomena alam dan segala isinya, yang mencakup seluruh makhluk hidup dan benda mati. IPA bertujuan untuk memahami proses, hukum, dan interaksi di alam semesta melalui observasi empiris, eksperimen, dan metode ilmiah yang terstruktur. \nbuku dengan jenis ini memiliki kategori yang beragam seperti buku tentang aneka biota laut, pembahasan mengenai tumbuhan, dan lain lain. \nbuku dengan jenis ini bisa kamu pilih di rak buku dengan no urut pertama dengan nama di samping rak bertuliskan 'Ilmu pengetahuan alam' dan bisa kamu baca langsung atau dibawa pulang dengan meminjamnya lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "bahasa",
+      "patterns": ["bahasa", "buku bahasa", "kamus", "tata bahasa", "grammar", "linguistik", "no 2", "2", "dua", "kedua", "second"],
+      "responses": ["Buku Bahasa adalah koleksi yang membahas kaidah, kosakata, dan cara penggunaan suatu bahasa, baik Bahasa Indonesia, Bahasa Inggris, maupun bahasa asing lainnya. \nKategori ini cocok untuk kamu yang ingin memperdalam kemampuan berbahasa, mulai dari tata bahasa dasar, kamus, hingga panduan percakapan. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kedua, dengan label 'Bahasa' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "sejarah",
+      "patterns": ["sejarah", "buku sejarah", "peristiwa masa lalu", "sejarah dunia", "sejarah indonesia", "no 3", "3", "tiga", "ketiga", "third"],
+      "responses": ["Buku Sejarah membahas peristiwa-peristiwa penting di masa lalu, baik sejarah bangsa Indonesia maupun sejarah dunia, termasuk tokoh-tokoh dan peristiwa besar yang membentuk peradaban. \nKategori ini cocok untuk kamu yang suka menelusuri asal-usul suatu kejadian atau ingin belajar dari masa lampau. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut ketiga, dengan label 'Sejarah' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "matematika",
+      "patterns": ["matematika", "buku matematika", "hitung", "aljabar", "kalkulus", "statistika", "no 4", "4", "empat", "keempat", "fourth"],
+      "responses": ["Buku Matematika membahas konsep bilangan, aljabar, geometri, kalkulus, dan statistika yang berguna untuk melatih logika dan kemampuan berpikir analitis. \nKategori ini cocok untuk kamu yang butuh referensi belajar hitung-hitungan atau memperdalam ilmu matematika. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut keempat, dengan label 'Matematika' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "fisika",
+      "patterns": ["fisika", "buku fisika", "mekanika", "termodinamika", "gaya dan energi", "no 5", "5", "lima", "kelima", "fifth"],
+      "responses": ["Buku Fisika membahas hukum-hukum alam yang mengatur gerak, energi, gaya, dan materi, mulai dari fisika dasar hingga topik yang lebih kompleks seperti termodinamika. \nKategori ini cocok untuk kamu yang penasaran dengan cara kerja alam semesta secara ilmiah. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kelima, dengan label 'Fisika' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "novel",
+      "patterns": ["novel", "buku novel", "cerita fiksi", "roman", "kisah cinta", "no 6", "6", "enam", "keenam", "sixth"],
+      "responses": ["Buku Novel berisi kisah fiksi panjang dengan alur cerita, tokoh, dan konflik yang mendalam, mulai dari genre roman, petualangan, hingga misteri. \nKategori ini cocok untuk kamu yang ingin bersantai sambil menikmati cerita yang menghanyutkan. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut keenam, dengan label 'Novel' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "cerita",
+      "patterns": ["cerita", "buku cerita", "dongeng", "cerita rakyat", "fabel", "no 7", "7", "tujuh", "ketujuh", "seventh"],
+      "responses": ["Buku Cerita berisi kumpulan dongeng, cerita rakyat, dan fabel yang ringan dan menghibur, cocok dibaca santai maupun untuk anak-anak. \nKategori ini cocok untuk kamu yang ingin membaca kisah singkat penuh pesan moral. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut ketujuh, dengan label 'Cerita' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "agama",
+      "patterns": ["agama", "buku agama", "tafsir", "kitab", "rohani", "no 8", "8", "delapan", "kedelapan", "eighth"],
+      "responses": ["Buku Agama membahas ajaran, kitab suci, sejarah, serta nilai-nilai spiritual dari berbagai agama, cocok untuk memperdalam pemahaman keagamaan dan spiritual. \nKategori ini cocok untuk kamu yang ingin memperkuat wawasan rohani. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kedelapan, dengan label 'Agama' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "astronomi",
+      "patterns": ["astronomi", "buku astronomi", "tata surya", "luar angkasa", "galaksi", "no 9", "9", "sembilan", "kesembilan", "ninth"],
+      "responses": ["Buku Astronomi membahas fenomena luar angkasa, tata surya, bintang, hingga galaksi, cocok untuk kamu yang penasaran dengan misteri alam semesta. \nKategori ini cocok untuk kamu yang suka menjelajah pengetahuan tentang luar angkasa. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kesembilan, dengan label 'Astronomi' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "teknologi",
+      "patterns": ["teknologi", "buku teknologi", "ilmu terapan", "pemrograman", "robotika", "teknik", "no 10", "10", "sepuluh", "kesepuluh", "tenth"],
+      "responses": ["Buku Teknologi/Ilmu Terapan membahas penerapan ilmu pengetahuan dalam kehidupan sehari-hari, mulai dari pemrograman, teknik, hingga robotika. \nKategori ini cocok untuk kamu yang tertarik dengan dunia teknologi dan inovasi. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kesepuluh, dengan label 'Teknologi' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "ilmu_sosial",
+      "patterns": ["ilmu sosial", "buku ilmu sosial", "sosiologi", "antropologi", "ekonomi", "no 11", "11", "sebelas", "kesebelas", "eleventh"],
+      "responses": ["Buku Ilmu Sosial membahas hubungan antar manusia dalam masyarakat, mulai dari sosiologi, antropologi, hingga ekonomi dan politik. \nKategori ini cocok untuk kamu yang ingin memahami dinamika sosial dan masyarakat. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut kesebelas, dengan label 'Ilmu Sosial' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "filsafat_psikologi",
+      "patterns": ["filsafat", "psikologi", "buku filsafat", "buku psikologi", "logika", "pemikiran", "no 12", "12", "dua belas", "keduabelas", "twelfth"],
+      "responses": ["Buku Filsafat dan Psikologi membahas pemikiran mendalam tentang kehidupan, logika, serta perilaku dan mental manusia. \nKategori ini cocok untuk kamu yang suka merenung atau ingin memahami cara kerja pikiran manusia. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut keduabelas, dengan label 'Filsafat dan Psikologi' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
+    },
+    {
+      "tag": "seni_rekreasi",
+      "patterns": ["seni", "rekreasi", "buku seni", "buku rekreasi", "olahraga", "fotografi", "seni rupa", "no 13", "13", "tiga belas", "ketigabelas", "thirteenth"],
+      "responses": ["Buku Seni dan Rekreasi membahas berbagai bentuk kesenian, hobi, dan kegiatan rekreasi, mulai dari seni rupa, fotografi, hingga olahraga. \nKategori ini cocok untuk kamu yang ingin menyalurkan hobi atau mencari inspirasi kreatif. \nBuku dengan jenis ini bisa kamu temukan di rak buku dengan no urut ketigabelas, dengan label 'Seni dan Rekreasi' di samping raknya, dan bisa dibaca langsung atau dipinjam lewat petugas \n❗Dan jangan lupa untuk selalu mematuhi tata tertib perpus ini ya😁👍"]
     }
   ]
 }
