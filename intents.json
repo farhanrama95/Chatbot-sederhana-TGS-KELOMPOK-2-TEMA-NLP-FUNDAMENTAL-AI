@@ -22,7 +22,7 @@
     },
     {
       "tag": "batas_pinjam",
-      "patterns": ["berapa lama boleh pinjam buku", "batas waktu peminjaman", "kapan harus dikembalikan", "lama peminjaman buku"],
+      "patterns": ["berapa lama boleh pinjam buku","batas pinjam buku", "batas waktu peminjaman", "kapan harus dikembalikan", "lama peminjaman buku"],
       "responses": ["Batas waktu peminjaman buku adalah 7 hari dan bisa diperpanjang 1 kali jika tidak ada yang memesan buku tersebut."]
     },
     {
