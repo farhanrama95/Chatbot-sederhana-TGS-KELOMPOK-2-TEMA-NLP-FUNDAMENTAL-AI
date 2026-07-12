@@ -56,4 +56,4 @@ userInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") sendMessage();
 });
 
-appendMessage("Halo! Saya PuscaBot 🤖. Tanyakan apa saja seputar perpustakaan.", "bot");
+appendMessage("Halo! Saya PuscaBot 🤖. Tanyakan apa saja seputar perpustakaan. berikut pertanyaan yang bisa kamu tanyakan: \n1.jam buka \n2.cara pinjam \n3.batas pinjam \n4.denda \n5.daftar anggota \n6.cari buku \n7.berterimakasih \n8.list buku \n9.tentang", "bot");

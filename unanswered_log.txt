@@ -15,3 +15,6 @@ list
 p
 ada
 ,
+makasi
+o
+pawjda
